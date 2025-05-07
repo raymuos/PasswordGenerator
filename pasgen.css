@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25em;
+    background: #232323;
+    color: #dddddd;
+}
+h1{
+    margin-bottom: 0;
+    background: linear-gradient(
+        to right,
+        hsl(259, 100%, 69%),
+        hsl(198, 100%, 49%)
+        /* #0190cd 70%,
+        #764ada 80% */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input{
+    background: #dddddd ;
+    color: #232323;
+    border: 2px solid #aaaaaa;
+    outline: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font: inherit;
+}
+button{
+    font: inherit;
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(18, 105, 175);
+    color: aliceblue;
+    width: 150px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+button:hover{
+    background: hsl(207, 81%, 58%);
+    color: #232323;
+}
+.checkbox{
+    height: 20px;
+    width: 20px;
+    accent-color: hsl(207, 81%, 58%);
+}
+#checkbox-div{
+    line-height: 2em;
+    text-align: left;
+}
+#password-div{
+    margin-top: 20px;
+    padding: 20px;
+    border: #aaaaaa 1px solid;
+    background: #333333;
+    text-align: left;
+    line-height: 2em;
+    min-width: 500px;
+    border-radius: 10px;
+    font-weight: 650;
+}
+#passwordDisplay{
+    color: hsl(207, 81%, 58%);
+    font-size: 1.5em;
+    font-family: monospace;
+}

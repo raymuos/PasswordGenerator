@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pasgen.css">
+</head>
+<body>
+    <h1>Random Password Generator</h1>
+    <div id="checkbox-div">
+        <div>
+            <input type="checkbox" class="checkbox" id="lowercaseCheck" checked>
+            <label for="lowercaseCheck">Include LowerCase characters</label>
+        </div>
+
+        <div>  
+            <input type="checkbox" class="checkbox" id="uppercaseCheck" checked>
+            <label for="uppercaseCheck">Include UpperCase characters</label>
+        </div>
+
+        <div>
+            <input type="checkbox" class="checkbox" id="numberCheck" checked>
+            <label for="numberCheck">Include Numerical characters</label>
+        </div>
+
+        <div>
+            <input type="checkbox" class="checkbox" id="symbolCheck" checked>
+            <label for="symbolCheck">Include Symbols</label>
+        </div>
+    </div>
+    <input type="number" id="passwordLengthInput" placeholder="Enter Password Length">
+    <button id="generateBtn">Generate Password</button>
+
+    <div id="password-div">Generated Password: <br> <b><span id="passwordDisplay"></span></b></div>
+    
+
+    <script src="pasgen.js"></script>
+</body>
+</html>
